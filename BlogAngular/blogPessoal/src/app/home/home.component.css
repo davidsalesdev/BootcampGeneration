@@ -1,0 +1,13 @@
+.parallax {
+   background-image: url('https://www.dealer.com.br/blog/wp-content/uploads/2017/09/tecnologia-humanizada-mapa-1000x520.jpg');
+   
+   min-height: 500px;
+
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="underlinemenu">
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+              </ul>
+        </nav>
+    </header>
+    <form class="box" action="index.html" method="post">
+        <h3>Contato</h3>
+        <input type="text" id="nome" onkeyup='validaNome()' placeholder="Nome">
+        <input type="email" id="email" onkeyup='validaEmail()' placeholder="Email">
+        <input type="text"  id="msg" onkeyup='validaMsg()'placeholder="Escreva aqui!!"/>
+        <button onclick="alert('Enviado com sucesso')">Enviar</button>
+    </form>
+
+    <div class="ml-50">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2798911863!2d-74.25986818535776!3d40.69767006766623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20Iorque%2C%20NY%2C%20EUA!5e0!3m2!1spt-BR!2sbr!4v1597801413676!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
+    <footer>
+        <p>Todos direitos Reservados</p>
+          <div class= "container">
+              <div class="redes">
+              <img src="assets/img/facebook.png">
+              <img src="assets/img/github.png">
+              <img src="assets/img/instagram.png">
+          </div> 
+      </footer>
+
+      <script src="assets/js/script.js"></script>
+  
+</body>
+</html>

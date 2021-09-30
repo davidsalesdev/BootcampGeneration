@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Meta tags Obrigatórias -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    .tm-social {
+      width: 50px;
+      height: 50px;
+    }
+  </style>
+  <title>Olá, mundo!</title>
+</head>
+
+<body>
+  <!-- COMEÇO DA NAVBAR-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(Página atual)</span></a>
+        <a class="nav-item nav-link" href="#">Destaques</a>
+        <a class="nav-item nav-link" href="#">Preços</a>
+        <a class="nav-item nav-link disabled" href="#">Desativado</a>
+      </div>
+    </div>
+  </nav>
+  <!--/FIM DA NAVBAR-->
+
+  <!-- COMEÇO DO CAROUSEL-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="https://andrehost.com.br/wp-content/uploads/2016/05/o-que-e-o-html5.jpg"
+          alt="Primeiro Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="https://sabe.io/classes/css/hero.png" alt="Segundo Slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100"
+          src="data:image/png;base64,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"
+          alt="Terceiro Slide">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Próximo</span>
+    </a>
+  </div>
+  <!-- /FIM DO CAROUSEL-->
+
+  <!--JUMBOTRON-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Fluid jumbotron</h1>
+      <p class="lead">Este é um jumbotron modificado que ocupa todo o espaço horizontal de seu elemento pai.</p>
+    </div>
+  </div>
+  <!--/FIM DO JUMBOTRON-->
+
+  <!-- COMEÇO DOS CARDS-->
+  <div class="container">
+    <div class="card-columns">
+      <div class="card">
+        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
+          <p class="card-text">Este é um card mais longo com suporte a texto embaixo, que funciona como uma introdução a
+            um conteúdo adicional. Este conteúdo é um pouco maior.</p>
+        </div>
+      </div>
+      <div class="card p-3">
+        <blockquote class="blockquote mb-0 card-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card bg-primary text-white text-center p-3">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+          <footer class="blockquote-footer">
+            <small>
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img" src=".../100px260/" alt="Imagem do card">
+      </div>
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          <footer class="blockquote-footer">
+            <small class="text-muted">
+              Alguém famoso em <cite title="Título da fonte">Título da fonte</cite>
+            </small>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Título do card</h5>
+          <p class="card-text">Este é um card maior com suporte a texto embaixo, que funciona como uma introdução a um
+            conteúdo adicional. Este card tem o conteúdo ainda maior que o primeiro, para mostrar a altura igual, em
+            ação.</p>
+          <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+        </div>
+      </div>
+    </div>
+
+    <!--FIM DOS CARDS-->
+
+    <!--COMEÇO DO TEXTO E VIDEO-->
+
+    <div class="row mt-5 mb-5">
+      <div class="col-md-6">
+        <h3>TEXTO TESTE</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam rem molestias ullam expedita doloremque
+          ducimus
+          pariatur quae quaerat numquam omnis deleniti, facilis laboriosam cupiditate perferendis porro? Eaque eos velit
+          reprehenderit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam rem molestias ullam expedita doloremque
+          ducimus
+          pariatur quae quaerat numquam omnis deleniti, facilis laboriosam cupiditate perferendis porro? Eaque eos velit
+          reprehenderit!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam rem molestias ullam expedita doloremque
+          ducimus
+          pariatur quae quaerat numquam omnis deleniti, facilis laboriosam cupiditate perferendis porro? Eaque eos velit
+          reprehenderit!
+        </p>
+      </div>
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XogE2cPEpfE" frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+      </div>
+
+    </div>
+    <!--/TEXTO E VIDEO-->
+
+  <!--COMEÇO DO FORMULARIO-->
+
+    <div class="row mb-5">
+      <div class="col-md-12">
+        <h4 class="text-center">
+          Entre em contato com a gente
+        </h4>
+      </div>
+    </div>
+
+    <div class="row d-flex align-items-center">
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Endereço de email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@exemplo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+
+          <div class="form-group d-flex justify-content-center">
+            <button class="btn btn-outline-success">Enviar</button>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <iframe  class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.366659089937!2d-46.66422748554327!3d-23.555271367251304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582da261e6b1%3A0x5ceb2e6bcbc1483b!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1597951613498!5m2!1spt-BR!2sbr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+
+    </div>
+
+ <!--/COMEÇO DO FORMULARIO-->
+
+    <hr>
+    <footer>
+      <div class="row mb-3">
+        <div class="col-md-12 d-flex justify-content-center">
+
+          <a href="https://www.facebook.com/" target="_blank" class="p-3">
+            <img class="tm-social" src="assets/img/facebook.png" alt="Logo do Facebook">
+          </a>
+
+          <a href="https://www.linkedin.com/" target="_blank" class="p-3">
+            <img class="tm-social" src="assets/img/instagram.png" alt="Logo do Linkedin">
+          </a>
+
+          <a href="https://www.instagram.com/" target="_blank" class="p-3">
+            <img class="tm-social" src="assets/img/linkedin.png" alt="Logo do Intagram">
+          </a>
+        </div>
+      </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12">
+      <p class="text-center">
+        Todos os direitos reservados : David Sales &copy;
+      </p>
+    </div>
+  </div>
+
+
+
+
+  </footer>
+  </div>
+  <!--/Rodapé-->
+
+
+
+
+
+
+  <!-- JavaScript (Opcional) -->
+  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

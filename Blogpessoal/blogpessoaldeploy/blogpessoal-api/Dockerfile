@@ -1,0 +1,1 @@
+FROM maven:2.0-jdk-1.8.0-slim
