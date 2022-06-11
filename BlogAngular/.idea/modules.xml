@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/BlogAngular.iml" filepath="$PROJECT_DIR$/.idea/BlogAngular.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogPessoal-api-master/blogPessoal.iml" filepath="$PROJECT_DIR$/blogPessoal-api-master/blogPessoal.iml" />
+    </modules>
+  </component>
+</project>
